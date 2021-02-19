@@ -1,0 +1,29 @@
+*{
+    margin: 1% 1% auto;
+
+}
+.container{
+    margin: auto;
+}
+#open_text{
+    margin: auto;
+    text-align: center;
+    font-size:large;
+    padding-bottom: 1rem;
+}
+.start{
+    font-size: large;
+    font-weight: bolder;
+    z-index: auto;
+}  
+.about,.find-Us{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: medium;
+    z-index: auto;
+}
+.bold-text{
+    font-weight: bolder;
+    font-size: medium;
+    z-index: 0;
+}
