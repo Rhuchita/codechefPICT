@@ -7,6 +7,12 @@
 *::after {
   box-sizing: border-box;
 }
+#mainNav{
+    margin: 0%;
+    text-align: right;
+    font-size: xx-large;
+    padding: 1rem;
+}
 .container{
     margin: auto;
     align-content: center;
