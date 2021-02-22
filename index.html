@@ -16,13 +16,38 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-  <body style="background: rgb(222, 221, 226);"></body>
+    <body style="background: rgb(175, 168, 241);">
+    </body>
 </head>
 
 <body>
+    <div class="container-header">
+        <img src="./Logo.png" alt="CPACC" style="padding: 1rem;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+
     <div class="container">
+        
         <div class="row">
-          <div class="col" id="open_text">
+          <div class="col jumbotron text-center" id="open_text" style="background-color:  rgb(222, 221, 226);">
             <h1 style="color: rgb(64, 59, 85); font-weight: 800;">
                 CodeChef <br>
                 PICT Student Chapter 
@@ -38,8 +63,8 @@
                 Well, we have something to help you with this situation
             </p>
           </div>
-          <div class="col" id="open_img">
-            <img src="Chef.png" style="background:none repeat scroll 0% 0%;">
+          <div class="col" id="open_img">             
+                <img src="Chef.png" alt="">
           </div>
         </div>
         <div class="about">
@@ -57,7 +82,7 @@
         </div>
 
         
-        <div class="overflow-hidden">
+        <div class="container-fluid overflow-hidden">
             <h2 style="font-weight: 700;">
                 Domains
             </h2>
@@ -65,11 +90,11 @@
                 We have various domains like competitive programming, Web Development,
                 Creatives and many more.... 
             </p>
-            <div class="row row-cols-2 row-cols-lg-4 g-3 g-lg-3">
-                <div class="col">
-                    <div class="p-3 border bg-light">
+            <div class="row gy-3" id="domain">
+                <div class="col-6">
+                    <div class="p-3 border bg-light border border-primary">
                         <img src="code.png">
-                        <h3> Competitive Programming</h3>
+                        <h3 id="dtext"> Competitive<br>Programming</h3>
                         <p>
                             A group of exceptional programmers who eat, 
                             sleep and breathe programming. They are the heart 
@@ -77,21 +102,20 @@
                         </p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="p-3 border bg-light">
+                <div class="col-6">
+                    <div class="p-3 border bg-light border border-primary">
                         <img src="webdevelopment.png">
-                        <h3> Web Development</h3>
+                        <h3 id="dtext"> Web<br>Development</h3>
                         <p>
                             A group of exceptional programmers who eat, 
                             sleep and breathe programming. They are the heart 
                             and soul of all the tech competitions organised by us.
-                            sleep and breathe programming. 
                         </p></div>
                 </div>
-                <div class="col">
-                    <div class="p-3 border bg-light">
+                <div class="col-6">
+                    <div class="p-3 border bg-light border border-primary">
                         <img src="android.png">
-                        <h3>Android Development</h3>
+                        <h3 id="dtext">Android<br>Development</h3>
                         <p>
                             A group of exceptional programmers who eat, 
                             sleep and breathe programming. They are the heart 
@@ -99,32 +123,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="p-3 border bg-light">
-                        <img src="dataScience.png">
-                        <h3>Data Science</h3>
-                        <p>
-                            A group of exceptional programmers who eat, 
-                            sleep and breathe programming. They are the heart 
-                            and soul of all the tech competitions organised by us.
-                        </p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-3 border bg-light">
-                        <img src="corporate.png">
-                        <h3>Corporate</h3>
-                        <p>
-                            A group of exceptional programmers who eat, 
-                            sleep and breathe programming. They are the heart 
-                            and soul of all the tech competitions organised by us.
-                        </p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-3 border bg-light">
+                <div class="col-6">
+                    <div class="p-3 border bg-light border border-primary">
                         <img src="create.png">
-                        <h3>Creatives</h3>
+                        <h3 id="dtext">Creative<br>Writing</h3>
                         <p>
                             A group of exceptional programmers who eat, 
                             sleep and breathe programming. They are the heart 
@@ -145,8 +147,21 @@
                 Survey No. 27, Near Trimurti Chowk,<br>
                 Dhankawadi, Pune, Maharashtra 411043.
             </p>
-            <div id="googleMap" style="width:100%;height:400px;" onload="myMap()">
+            
+            <div class="mapouter mx-auto">
+                <div class="gmap_canvas">
+                    <iframe width="600" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=SCTR's%20Pune%20Institute%20of%20Computer%20Technology%20Survey%20No.%2027,%20Near%20Trimurti%20Chowk,%20Dhankawadi,%20Pune,%20Maharashtra%20411043.%20&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                    <a href="https://yt2.org"></a><br>
+                    <style>.mapouter{position:relative;text-align:center;height:500px;width:600px;}
+                    </style>
+                    <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
+                    </style>
+                </div>
             </div>
+            
         </div>
 
     </div>

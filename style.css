@@ -1,9 +1,15 @@
 *{
-    margin: 1% 1% auto;
-
+    margin: 1% auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 .container{
     margin: auto;
+    align-content: center;
 }
 #open_text{
     margin: auto;
@@ -25,17 +31,29 @@
 .bold-text{
     font-weight: bolder;
     font-size: medium;
-    z-index: 0;
+    z-index: auto;
 }
-.p-3{
-    min-height: 250px;
-}
+@media (max-width: 991.98px) {
+    #dtext {
+      padding: calc(1.325rem + 0.9vw);
+      font-size: 1.425rem; /* 1.125rem is small enough, so RFS won't rescale this */
+      font-weight: bolder;
+    }
+    body{
+        padding: rfs-fluid-value(2rem);
+        align-items: center;
+        text-align: center;
+        min-width: fit-content;
+    }
+  }
+  
 h2{
     text-align: center;
 }
+#domain{
+    align-content: center;
+    text-align: center;
+}
 img{
-    border-radius: 1cm;
-    border-width: thick;
-    border-color: rgb(3, 3, 73);
-    align-items: center;
+    text-align: center;
 }
