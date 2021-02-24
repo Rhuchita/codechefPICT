@@ -59,6 +59,7 @@ h2{
 #domain{
     align-content: center;
     text-align: center;
+    min-height: 265px;
 }
 img{
     text-align: center;
