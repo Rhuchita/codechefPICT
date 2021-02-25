@@ -42,7 +42,7 @@
 @media (max-width: 991.98px) {
     #dtext {
       padding: calc(1.325rem + 0.9vw);
-      font-size: 1.425rem; /* 1.125rem is small enough, so RFS won't rescale this */
+      font-size: 1.425rem; 
       font-weight: bolder;
     }
     body{
@@ -64,3 +64,98 @@ h2{
 img{
     text-align: center;
 }
+
+
+#social {
+    margin: 20px 10px;
+    text-align: center;
+  }
+  
+.smGlobalBtn { /* global button class */
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      border:2px solid #ddd; /* add border to the buttons */
+      box-shadow: 0 3px 3px #999;
+      padding: 0px;
+      text-decoration: none;
+      text-align: center;
+      color: #fff;
+      font-size: 25px;
+      font-weight: normal;
+      line-height: 2em;
+      border-radius: 27px;
+      -moz-border-radius:27px;
+      -webkit-border-radius:27px;
+}
+  
+.envelopeBtn{
+    background: #4060A5;
+}
+
+.envelopeBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f0e0"; /* add facebook icon */
+}
+
+.envelopeBtn:hover{
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5; /* change the border color on mouse hover */
+}
+
+.facebookBtn,.twitterBtn{
+      background: #4060A5;
+}
+  
+.facebookBtn:before{ /* use :before to add the relevant icons */
+      font-family: "FontAwesome";
+      content: "\f09a"; /* add facebook icon */
+}
+  
+.facebookBtn:hover{
+      color: #4060A5;
+      background: #fff;
+      border-color: #4060A5; /* change the border color on mouse hover */
+}
+
+.instaBtn{
+    background-image: linear-gradient(to right top,#DD2A7B,#8134AF,#515BD4);
+}
+.instaBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f16d"; /* add facebook icon */
+}
+
+.instaBtn:hover{
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5; /* change the border color on mouse hover */
+}  
+
+  
+.twitterBtn:before{
+        font-family: "FontAwesome";
+        content: "\f099"; /* add twitter icon */
+        
+}
+  
+.twitterBtn:hover,.linkedinBtn:hover{
+        color: #00ABE3;
+        background: #fff;
+        border-color: #00ABE3;
+  }
+  
+
+  
+  /* linkedin button class*/
+.linkedinBtn{
+      background: #0094BC;
+}
+  
+  .linkedinBtn:before{
+        font-family: "FontAwesome";
+        content: "\f0e1"; /* add linkedin icon */
+  }
